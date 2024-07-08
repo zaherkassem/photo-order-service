@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "6f934c32-7ba5-4112-af07-9b8d22dd029d",
 		"name": "Get Random Photos",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "2329485"
 	},
 	"item": [
@@ -11,19 +11,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/api/photos/5",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"photos",
-						"5"
-					]
-				}
+				"url": "http://localhost:3000/api/photos/5"
 			},
 			"response": []
 		},
@@ -32,38 +20,25 @@
 			"request": {
 				"method": "POST",
 				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/api/orders",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"orders"
-					]
-				}
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"email\": \"john.doe@example.com\",\r\n\"fullName\": \"John Doe\",\r\n\"fullAddress\": \"123 Main St, Anytown, USA\",\r\n\"imageUrls\": [\"https://example.com/image1.jpg\", \"https://example.com/image2.jpg\"],\r\n\"frameColor\": \"black\",\r\n\"user\": \"user123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/orders"
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost:3000/api/orders Copy",
+			"name": "http://localhost:3000/api/orders",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/api/orders",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"orders"
-					]
-				}
+				"url": "http://localhost:3000/api/orders"
 			},
 			"response": []
 		},
@@ -72,19 +47,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/api/orders/user123",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"orders",
-						"user123"
-					]
-				}
+				"url": "http://localhost:3000/api/orders/user123"
 			},
 			"response": []
 		}
