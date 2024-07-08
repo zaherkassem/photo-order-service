@@ -22,6 +22,10 @@ A Node.js service with TypeScript that allows users to:
    cd photo-order-service
 
 
+
+## For Test 
+Please use Get Random Photos.postman_collection.json
+
 ## API EndPoints:
 
 Get Random Photos
